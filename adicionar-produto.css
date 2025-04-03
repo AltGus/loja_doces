@@ -1,0 +1,132 @@
+/* =================== */
+/* Estilos Exclusivos para Adicionar Produto */
+/* =================== */
+
+:root {
+    --cor-primaria: #ff66b2;
+    --cor-hover: #ffd1e3;
+    --cor-preco: #e44d26;
+    --cor-botao: #da26e4;
+    --cor-botao-hover: #c0392b;
+    --cor-adicionar: #4CAF50;
+    --cor-adicionar-hover: #388E3C;
+    --cor-voltar: #ff4081;
+    --cor-voltar-hover: #e6005c;
+    --cor-carrinho: #ff9800;
+    --cor-carrinho-hover: #e68900;
+}
+
+
+/* Contêiner principal do formulário */
+.adicionar-produto-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Título */
+.adicionar-produto-container h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #333;
+}
+
+/* Estrutura do formulário */
+.adicionar-produto-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Grupo de inputs */
+.adicionar-produto-input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+/* Labels */
+.adicionar-produto-input-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #444;
+}
+
+/* Inputs e textarea padronizados */
+.adicionar-produto-input-group input,
+.adicionar-produto-input-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+/* Efeito de foco */
+.adicionar-produto-input-group input:focus,
+.adicionar-produto-input-group textarea:focus {
+    border-color: var(--cor-primaria);
+    outline: none;
+}
+
+/* Ajuste para textarea */
+.adicionar-produto-input-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* =================== */
+/* Botões */
+/* =================== */
+
+.btn-adicionar-produto {
+    width: 100%;
+    background-color: var(--cor-botao);
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-adicionar-produto:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+/* Botão "Voltar" */
+.btn-voltar-adicionar-produto {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: var(--cor-voltar);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s ease-in-out;
+    text-align: center;
+}
+
+.btn-voltar-adicionar-produto:hover {
+    background-color: var(--cor-voltar-hover);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .adicionar-produto-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
